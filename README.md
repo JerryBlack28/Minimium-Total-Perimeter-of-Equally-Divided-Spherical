@@ -1,1 +1,1 @@
-# Minimium-total-Perimeter-of-Equally-Divided-Spherical
+# Minimium-Total-Perimeter-of-Equally-Divided-Spherical
