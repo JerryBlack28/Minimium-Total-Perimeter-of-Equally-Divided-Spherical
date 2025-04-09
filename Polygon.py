@@ -3,10 +3,11 @@ import matplotlib.pyplot as plt
 from spherical_geometry.polygon import SphericalPolygon
 from scipy.spatial import geometric_slerp
 from Voronoi import spherical_to_cartesian, haversine, Voronoi
+from numpy import ndarray
 
 
 class Polygon:
-    def __init__(self, vertices, regions):
+    def __init__(self, vertices: ndarray, regions: list):
         self.size = len(regions)
         self.latv = vertices[:, 0]
         self.lonv = vertices[:, 1]

@@ -2,6 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from scipy.spatial import SphericalVoronoi, geometric_slerp
+from numpy import ndarray
 
 
 def spherical_to_cartesian(lon, lat, r=1):  # lon: 经度, lat: 维度
@@ -42,7 +43,7 @@ def haversine(lon1, lat1, lon2, lat2, radius=1, rad=1):
 
 
 class Voronoi:
-    def __init__(self, points, radius=1, center=np.array([0, 0, 0])):
+    def __init__(self, points: ndarray, radius=1, center=np.array([0, 0, 0])):
         self.size = np.size(points, 0)
         self.radius = radius
         self.center = center
